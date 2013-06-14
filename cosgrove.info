@@ -1,11 +1,10 @@
 name = Cosgrove
-description = Use a quip about Ken Cosgrove from madmen
+description = I'm Ken Cosgrove. Crafted By <a href="http://craftedbyspark.com">SPARK</a>
 screenshot = screenshot.png
 version = 1.0
 core = 7.x
 php = 5.2
 engine = phptemplate
-
 
 
 ;-R E G I O N S-
