@@ -1,0 +1,20 @@
+name = cosgrove
+description = Use a quip about Ken Cosgrove from madmen
+version = 1.0
+core = 7.x
+engine = phptemplate
+
+regions[headerUpper] = headerUpper
+regions[headerHero] = headerHero
+regions[headerLower] = headerLower
+regions[contentUpper] = contentUpper
+regions[contentMain] = contentMain
+regions[contentLower] = contentLower
+regions[footerUpper] = footerUpper
+regions[footerLower] = footerLower
+
+stylesheets[all][] = css/amazium.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/normalize.css
+
+scripts[] = js/cosgrove.js
