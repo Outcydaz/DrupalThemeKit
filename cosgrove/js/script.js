@@ -1,5 +1,3 @@
-
-
 // Log Function
 window.log=function(){log.history=log.history||[];log.history.push(arguments);if(this.console){arguments.callee=arguments.callee.caller;var a=[].slice.call(arguments);(typeof console.log==="object"?log.apply.call(console.log,console,a):console.log.apply(console,a))}};
 (function(b){function c(){}for(var d="assert,count,debug,dir,dirxml,error,exception,group,groupCollapsed,groupEnd,info,log,timeStamp,profile,profileEnd,time,timeEnd,trace,warn".split(","),a;a=d.pop();){b[a]=b[a]||c}})((function(){try
@@ -7,21 +5,21 @@ window.log=function(){log.history=log.history||[];log.history.push(arguments);if
 
 
 (function($) { // jQuery Closure
-  $(function(){ // Dom Ready shortcut
+	$(function(){ // Dom Ready shortcut
 
-	// Lux portfolio
-	if ( $('.isotope-element').length > 0 ) {
+		// Isotope
+		if ( $('.isotope-element').length > 0 ) {
 
-		$('.isotope-element img').jcaption({
-			copyStyle: true,
-			animate: true,
-			show: {height: "show"},
-			hide: {height: "hide"}
-		});
+			$('.isotope-element img').jcaption({
+				copyStyle: true,
+				animate: true,
+				show: {height: "show"},
+				hide: {height: "hide"}
+			});
 
-	} 
+		} 
 
-		// Contact page map
+		// Contact Page Map
 		if ($("#map-canvas").length > 0) {
 			
 			  var styles = [
@@ -85,7 +83,7 @@ window.log=function(){log.history=log.history||[];log.history.push(arguments);if
 			// Create a new StyledMapType object, passing it the array of styles,
 			// as well as the name to be displayed on the map type control.
 			var styledMap = new google.maps.StyledMapType(styles,{name: "styledMap"});
-            
+		       
 			var myOptions = {
 				zoom: 16,
 				center: new google.maps.LatLng(51.043074,-114.084477),
@@ -146,12 +144,10 @@ window.log=function(){log.history=log.history||[];log.history.push(arguments);if
 				infowindow.open(map,luxMarker);
 			});
 			
-			
-			
-		}// #Contact page map
+		}// #Contact Page Map
 
 
 
-  }); // end dom ready shortcut
+	}); // end dom ready shortcut
 
 })(jQuery);
