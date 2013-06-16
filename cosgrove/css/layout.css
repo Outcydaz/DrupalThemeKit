@@ -3,7 +3,9 @@
 * Copyright 2012, Mike Ballan
 * www.amazium.co.uk
 */
-
+#global {
+	min-height: 600px;
+}
 
 /***** Screen 1200px+ *****/
 
